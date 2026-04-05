@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Texto com os dados centralizado -->
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"/>
+
+
+
+    <!-- Pergunta centralizada acima dos botões -->
+    <TextView
+        android:id="@+id/textPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pergunta"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@id/layoutBotoes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Container para os botões embaixo -->
+    <LinearLayout
+        android:id="@+id/layoutBotoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnSim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sim"/>
+
+        <Button
+            android:id="@+id/btnNao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nao"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CadastroApp</string>
+    <string name="nome">Nome:</string>
+    <string name="idade">Idade:</string>
+    <string name="endereco">Endereço:</string>
+    <string name="salvar">Salvar</string>
+    <string name="resultado_title">Resultado</string>
+    <string name="sobre_title">Sobre</string>
+    <string name="pergunta">Seus dados estão corretos?</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="sobre">Sobre</string>
+    <string name="sucesso">Cadastro salvo com sucesso!</string>
+</resources>
