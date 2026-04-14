@@ -10,5 +10,11 @@
     <string name="sim">Sim</string>
     <string name="nao">Não</string>
     <string name="sobre">Sobre</string>
+    <string name="integrantes">
+    Integrantes:
+    Aline Missaki Ishiwaki
+    Bruno Ponciano da Silva
+    Vinicius Araujo dos Santos
+    </string>
     <string name="sucesso">Cadastro salvo com sucesso!</string>
 </resources>
