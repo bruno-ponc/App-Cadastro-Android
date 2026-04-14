@@ -89,7 +89,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Botão Salvar fixo embaixo -->
+    <!-- Botão Salvar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSalvar"
         android:layout_width="match_parent"
@@ -101,7 +101,7 @@
         app:iconGravity="textStart"
         app:iconPadding="8dp"/>
 
-    <!-- Botão Sobre circular apenas com ícone -->
+    <!-- Botão Sobre -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnSobre"
         android:layout_width="wrap_content"

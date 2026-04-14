@@ -19,7 +19,7 @@
         android:layout_marginBottom="16dp"/>
 
 
-    <!-- Texto com os dados centralizado -->
+    <!-- Texto com os dados -->
     <TextView
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
 
 
 
-    <!-- Pergunta centralizada acima dos botões -->
+    <!-- Pergunta -->
     <TextView
         android:id="@+id/textPergunta"
         android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Container para os botões embaixo -->
+    <!-- Container para os botões -->
     <LinearLayout
         android:id="@+id/layoutBotoes"
         android:layout_width="match_parent"

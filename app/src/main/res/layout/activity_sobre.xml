@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Título no topo centralizado -->
+    <!-- Título -->
     <TextView
         android:id="@+id/textTituloSobre"
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         android:gravity="center"
         android:layout_marginBottom="12dp"/>
 
-    <!-- Nomes dos integrantes (normais) -->
+    <!-- Nomes -->
     <TextView
         android:text="Aline M. Ishiwaki - 60300725"
         android:layout_width="match_parent"

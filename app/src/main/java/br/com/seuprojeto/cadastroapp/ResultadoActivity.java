@@ -9,10 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Activity responsável por mostrar os dados cadastrados
- * e permitir confirmação ou edição.
- *
- * Ciclo de vida é logado para fins didáticos.
+ Activity responsável por mostrar os dados cadastrados e permitir confirmação ou edição.
  */
 public class ResultadoActivity extends AppCompatActivity {
 
