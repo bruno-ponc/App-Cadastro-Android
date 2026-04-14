@@ -8,7 +8,7 @@
 
     <!-- Instituição -->
     <TextView
-        android:text="Instituição: Unipar"
+        android:text="Universidade Paranaense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -17,7 +17,7 @@
 
     <!-- Curso -->
     <TextView
-        android:text="Curso: Sistemas de Informação"
+        android:text="Sistemas de Informação"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -27,7 +27,8 @@
 
     <!-- Integrantes -->
     <TextView
-        android:text="Integrantes: "
+        android:text="@string/integrantes"
+        android:lineSpacingExtra="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
