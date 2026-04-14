@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_gradiente"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textTituloResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_app"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/azul_titulo"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"/>
+
 
     <!-- Texto com os dados centralizado -->
     <TextView
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_centerInParent="true"
         android:textAlignment="center"
         android:gravity="center"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_margin="24dp"/>
 
 
 

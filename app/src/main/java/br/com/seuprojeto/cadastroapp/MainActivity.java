@@ -6,20 +6,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.EditText;
 
-/**
- * Activity principal responsável pelo cadastro dos dados.
- * Contém campos de Nome, Idade e Endereço, além dos botões
- * Salvar e Sobre.
- *
- * Ciclo de vida é logado para fins didáticos.
- */
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText editNome, editIdade, editEndereco;
-    private Button btnSalvar, btnSobre;
+    private MaterialButton btnSalvar;
+    private FloatingActionButton btnSobre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnSalvar = findViewById(R.id.btnSalvar);
         btnSobre = findViewById(R.id.btnSobre);
 
-        // Pré-carregar dados se vier da tela Resultado (quando usuário clicou "Não")
+        // Pré-carregar dados se vier da tela Resultado
         Intent intent = getIntent();
         if (intent.hasExtra("nome")) {
             editNome.setText(intent.getStringExtra("nome"));
@@ -58,14 +54,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Inflar o menu na Toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
-    // Tratar clique no item de menu "Sobre"
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_sobre) {
@@ -75,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    // Ciclo de vida com logs
     @Override protected void onStart() { super.onStart(); Log.i("MainActivity", "onStart chamado"); }
     @Override protected void onResume() { super.onResume(); Log.d("MainActivity", "onResume chamado"); }
     @Override protected void onPause() { super.onPause(); Log.w("MainActivity", "onPause chamado"); }

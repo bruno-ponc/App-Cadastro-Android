@@ -1,37 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_gradiente"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!-- Título no topo centralizado -->
+    <TextView
+        android:id="@+id/textTituloSobre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_app"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/azul_titulo"
+        android:gravity="center"
+        android:layout_marginBottom="180dp"/>
 
     <!-- Instituição -->
     <TextView
         android:text="Instituição: Unipar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textAlignment="center"/>
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
 
     <!-- Curso -->
     <TextView
         android:text="Curso: Sistemas de Informação"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginBottom="12dp"
-        android:textAlignment="center"/>
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
 
     <!-- Integrantes -->
     <TextView
-        android:text="Integrantes: "
-        android:layout_width="wrap_content"
+        android:text="Integrantes:"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:layout_marginBottom="12dp"
-        android:textAlignment="center"/>
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
 
+    <!-- Nomes dos integrantes (normais) -->
+    <TextView
+        android:text="Aline M. Ishiwaki - 60300725"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:text="Bruno P. da Silva - 60000217"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:text="Vinicius A. dos Santos - 60300818"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
 </LinearLayout>

@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradiente"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_app"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/azul_titulo"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"/>
+
+
+
 
     <!-- Container central para os campos -->
     <LinearLayout
@@ -11,6 +29,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerInParent="true">
+
 
         <!-- Nome -->
         <LinearLayout
@@ -71,20 +90,28 @@
     </LinearLayout>
 
     <!-- Botão Salvar fixo embaixo -->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSalvar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/salvar"
-        android:layout_alignParentBottom="true"/>
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_alignParentBottom="true"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"/>
 
-    <!-- Botão Sobre acima e à direita do botão Salvar -->
-    <Button
+    <!-- Botão Sobre circular apenas com ícone -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnSobre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sobre"
-        android:drawableLeft="@android:drawable/ic_menu_info_details"
         android:layout_above="@id/btnSalvar"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        app:srcCompat="@android:drawable/ic_menu_info_details"
+        android:contentDescription="@string/sobre"
+        android:backgroundTint="@color/blue_translucent"
+        app:tint="@android:color/white"
+        android:elevation="0dp"
+        app:useCompatPadding="false"/>
 </RelativeLayout>
